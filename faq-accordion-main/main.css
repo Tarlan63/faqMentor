@@ -1,0 +1,156 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400; /* Regular */
+
+  }
+
+  h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700; /* Bold */
+  }
+  
+
+  @font-face {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    src: url('/faq-accordion-main/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    src: url('/faq-accordion-main/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    font-weight: 700;
+    src: url('/faq-accordion-main/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+  }
+
+
+  .background1,
+  .background2 {
+    flex: 1;
+    z-index: 0;
+  }
+
+  .background2 {
+    z-index: 0;
+  }
+
+  .background1 {
+    background-image: url("./assets/images/background-pattern-desktop.svg")
+
+  }
+
+  .background2 {
+    background-color: hsl(275, 100%, 97%);
+  }
+
+  .overlaping {
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-color: white;
+    padding:25px;
+
+  }
+
+  .accordion {
+    width: 450px;
+
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .accordion{
+      width: 250px;
+      
+    }
+    .overlaping {
+      top: 150px;
+    }
+    
+    
+  }
+
+  .attribution {
+    text-align: center;
+  }
+
+  .accordioncontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accordion-header> span {
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700; 
+  }
+
+
+
+  .accordion-header {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+
+  }
+
+  .accordion-header> h3:hover {
+    cursor: pointer;
+    color: purple;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700; 
+  }
+
+  .accordion-body {
+    border-bottom: 1px solid hsl(293, 25%, 94%);
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display: none;
+    font-family: 'Work Sans', sans-serif;
+    color: hsl(293, 19%, 72%);
+    
+   
+  }
+
+
+  .accordion-button {
+    
+    margin-left: auto;
+    border-style: none;
+    background-color: hsl(0, 0%, 100%);
+   
+    
+  }
+
+  .accordion-button:hover {
+    cursor:pointer;
+    
+    
+  }
+
+  
