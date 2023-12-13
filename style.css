@@ -45,34 +45,31 @@ html, body {
   }
 
 
-  .background1,
-  .background2 {
+
+  .background1 {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
     flex: 1;
     z-index: 0;
   }
 
   .background2 {
-    z-index: 0;
-  }
-
-  .background1 {
-    background-image: url("./assets/images/background-pattern-desktop.svg")
-
-  }
-
-  .background2 {
     background-color: hsl(275, 100%, 97%);
+    flex: 1;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
   }
 
   .overlaping {
     z-index: 1;
     position: absolute;
-    top: 180px;
+    top:25%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
     background-color: white;
-    padding:25px;
+    padding:30px;
 
   }
 
