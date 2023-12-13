@@ -67,7 +67,7 @@ html, body {
   .overlaping {
     z-index: 1;
     position: absolute;
-    top: 150px;
+    top: 180px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
